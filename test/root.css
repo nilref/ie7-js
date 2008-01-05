@@ -1,0 +1,9 @@
+/* provide explorer support for css2 selectors */
+@import url(test.css);
+
+@namespace my url(http://dean.edwards.name/space);
+
+:root {
+	background-color: yellow;
+}
+

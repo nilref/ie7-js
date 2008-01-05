@@ -1,0 +1,15 @@
+/* provide explorer support for css2 selectors */
+@import url(test.css);
+
+@namespace my url(http://dean.edwards.name/space);
+
+my|test {
+	border: 1px solid silver;
+	margin: 1em 0;
+	width: 9em;
+}
+
+my|test:active {
+	background-color: yellow;
+}
+

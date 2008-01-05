@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>IE7 {CSS2: auto}</title>
+
+ <!-- compliance patch for microsoft browsers -->
+ <!--[if lt IE 8]><script src="../build.php?<?php echo(time()); ?>" type="text/javascript">
+  IE7_BOX_MODEL = false;
+ </script><![endif]-->
+
+ <style type="text/css">
+
+  #box {
+
+   border: black 25px solid;
+   padding: 5em;
+   background: url(horizontal-gauge.gif);
+   width: 10cm;
+   height: 5cm;
+
+  }
+
+ </style>
+</head>
+<body>
+ <script type="text/javascript" src="ie7-demo.js"></script>
+ <h2>IE7_BOX_MODEL = false;</h2>
+
+ <div id="box"></div>
+ <p>This example demonstrates how to turn off box-model fixes.</p>
+
+ <p>&lt;&nbsp;<a href="index.html">back</a></p>
+</body>
+</html>

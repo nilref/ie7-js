@@ -1,0 +1,17 @@
+/* provide explorer support for css2 selectors */
+@import url(test.css);
+
+@namespace my url(http://dean.edwards.name/space);
+
+my|test {
+	margin: 1em 0;
+}
+
+my|child {
+	display: list-item;
+	margin-left: 2em;
+}
+
+my|child:first-child {
+	background-color: yellow;
+}

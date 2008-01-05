@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>IE7 {CSS2: auto}</title>
+
+ <!-- compliance patch for microsoft browsers -->
+ <!--[if lt IE 8]>
+ <script src="../build.php?<?php echo(time()); ?>" type="text/javascript"></script>
+ <![endif]-->
+
+ <style type="text/css">
+
+  input:checked + span {
+
+   background-color: yellow;
+
+  }
+
+ </style>
+</head>
+
+<body>
+ <script type="text/javascript" src="ie7-demo.js"></script>
+ <h2>:checked</h2>
+
+ <form>
+  <label><input type="radio" name="radio" value="V" checked="checked"/> <span>Vanilla</span></label><br />
+  <label><input type="radio" name="radio" value="S"/> <span>Strawberry</span></label><br />
+  <label><input type="radio" name="radio" value="C"/> <span>Chocolate</span></label>
+ </form>
+
+ <p>&lt;&nbsp;<a href="index.html">back</a></p>
+</body>
+</html>

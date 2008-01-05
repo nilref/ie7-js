@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>IE7 {CSS2: auto}</title>
+
+ <!-- compliance patch for microsoft browsers -->
+ <!--[if lt IE 8]><script src="../build.php?<?php echo(time()); ?>" type="text/javascript"></script><![endif]-->
+
+ <style type="text/css">
+
+  p.test {
+   background: skyblue;
+  }
+
+  #inline::after {
+   display: inline;
+   background-color: yellow;
+   content: "World!";
+   padding-left: .3em;
+  }
+
+  #block::after {
+   display: block;
+   font-family: "Courier New";
+   background-color: red;
+   content: "World!";
+  }
+
+ </style>
+</head>
+<body>
+ <script type="text/javascript" src="ie7-demo.js"></script>
+ <h2>::after</h2>
+
+ <h3>inline</h3>
+ <p class="test" id="inline">Hello</p>
+
+ <h3>block</h3>
+ <p class="test" id="block">Hello</p>
+
+ <p>&lt;&nbsp;<a href="index.html">back</a></p>
+</body>
+</html>

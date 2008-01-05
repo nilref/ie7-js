@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>IE7 {CSS2: auto}</title>
+
+ <!-- compliance patch for microsoft browsers -->
+ <!--[if lt IE 8]>
+  <script src="../build.php?<?php echo(time()); ?>" type="text/javascript"></script>
+  <script src="../ie7-css-strict.js" type="text/javascript"></script>
+ <![endif]-->
+
+ <style type="text/css">
+
+  p.blue {color: blue;}
+  p.green {color:green;}
+  p+p {color:red;}
+
+ </style>
+</head>
+
+<body>
+<p>This is a normal paragraph.</p>
+<p>This should be red.</p>
+<p class="blue">This should be blue.</p>
+<p class="green">This should be green.</p>
+</body>
+</html>

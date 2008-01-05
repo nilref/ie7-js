@@ -1,0 +1,27 @@
+/* provide explorer support for css2 selectors */
+@import url(test.css);
+
+@namespace my url(http://dean.edwards.name/space);
+
+my|parent {
+	border: 1px solid silver;
+	margin: 1em 0.3em 0.3em;
+	padding: 0.3em;
+}
+
+my|baby-sitter {
+	border: 1px solid silver;
+	margin: 0.3em;
+	padding: 0.3em;
+}
+
+my|child {
+	border: 1px solid silver;
+	margin: 0.2em;
+	padding: 0.2em;
+}
+
+my|parent > my|child {
+	background-color: yellow;
+}
+
