@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html>
 <head>
  <title>IE7 {CSS2: auto}</title>
- <!-- compliance patch for microsoft browsers -->
- <!--[if lt IE 8]>
- <script src="../trunk/lib/IE8.js" type="text/javascript"></script>
- <script src="../trunk/src/ie7-recalc.js" type="text/javascript"></script>
+ <!-- Compliance patch for Microsoft browsers -->
+ <!--[if lt IE 9]>
+ <script src="../trunk/lib/IE9.js"></script>
+ <script src="../trunk/src/ie7-recalc.js"></script>
  <![endif]-->
  
- <style type="text/css">  
+ <style>  
   label:hover {
    background-color: yellow;
   }
@@ -31,9 +31,9 @@
   div.box:nth-child(4n+3) {background-color: blue;}
  </style>
  
- <script src="last-child.js" type="text/javascript"></script>
+ <script src="last-child.js"></script>
  
- <script type="text/javascript">
+ <script>
   function addLabel() {
    var parent = document.getElementById("labels");
    var child = document.createElement("p");
@@ -63,25 +63,25 @@
  </script>
 </head>
 <body>
- <script type="text/javascript" src="ie7-demo.js"></script>
+ <script src="ie7-demo.js"></script>
 
  <h2>document.recalc()</h2>
  <p>Calling <code>document.recalc()</code> after you have made changes to the
   <abbr title="Document Object Model">DOM</abbr> will refresh the IE7 style rules.
   You must include the module <code>ie7-recalc.js</code> for this to work.</p>
  
- <hr />
+ <hr>
 
  <!-- test new HTML elements -->
  <h3>Refresh <abbr title="HyperText Markup Language">HTML</abbr> Elements</h3>
  <p>New <abbr>HTML</abbr> elements are fixed after they are created.</p>
  <div id="labels">
   <p><label>You should be able to click this label to check/uncheck the box
-   <input type="checkbox" value="test"/></label></p>
+   <input type="checkbox" value="test"></label></p>
  </div>
  <p><button onclick="addLabel()">Add Label</button></p>
 
- <hr />
+ <hr>
 
  <!-- test CSS2/3 selectors -->
  <h3>Refresh <abbr title="Cascading Style Sheets">CSS</abbr> Rules</h3>
@@ -93,7 +93,7 @@
  </ul>
  <p><button onclick="addListItem()">Add List Item</button></p>
  
- <hr />
+ <hr>
 
  <!-- test calculated styles -->
  <h3>Recalculate Style Properties</h3>
@@ -104,7 +104,7 @@
  </div>
  <p><button onclick="addBox()">Add Box</button></p>
  
- <hr />
+ <hr>
 
  <p>&lt;&nbsp;<a href="index.html">back</a></p>
 </body>

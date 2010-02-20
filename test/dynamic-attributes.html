@@ -1,17 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!doctype html>
+<html>
 <head>
  <title>IE7 {CSS2: auto}</title>
 
  <!-- This one's for you Bill. Better late than never! ;-) -->
 
- <!-- compliance patch for microsoft browsers -->
- <!--[if lt IE 8]>
-  <script src="../trunk/lib/IE8.js" type="text/javascript"></script>
-  <script src="../ie7-dynamic-attributes.js" type="text/javascript"></script>
+ <!-- Compliance patch for Microsoft browsers -->
+ <!--[if lt IE 9]>
+  <script src="../trunk/lib/IE9.js"></script>
+  <script src="../ie7-dynamic-attributes.js"></script>
  <![endif]-->
 
- <style type="text/css">
+ <style>
 
  	/* this is the dynamic rule. It matches the "required" flag
  	   of empty input elements */
@@ -67,17 +67,17 @@
 </head>
 
 <body>
- <script type="text/javascript" src="ie7-demo.js"></script>
+ <script src="ie7-demo.js"></script>
  <h2>Dynamic Attribute Selectors</h2>
 
  <form>
   <fieldset>
-   <p class="required"><label>Name:</label><input type="text" value=""/><sup>required</sup></p>
-   <p><label>Address:</label><input type="text" value=""/>
-    <br /><input type="text" value=""/></p>
-   <p><label>Phone:</label><input type="text" value=""/></p>
-   <p><label>Fax:</label><input type="text" value=""/></p>
-   <p class="required"><label>Email:</label><input type="text" value=""/><sup>required</sup></p>
+   <p class="required"><label>Name:</label><input type="text" value=""><sup>required</sup></p>
+   <p><label>Address:</label><input type="text" value="">
+    <br><input type="text" value=""></p>
+   <p><label>Phone:</label><input type="text" value=""></p>
+   <p><label>Fax:</label><input type="text" value=""></p>
+   <p class="required"><label>Email:</label><input type="text" value=""><sup>required</sup></p>
   </fieldset>
  </form>
  <p>To see the dynamic effect, enter text in the <em>required</em> fields.</p>

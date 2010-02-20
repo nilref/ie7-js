@@ -1,14 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html>
 <head>
  <title>IE7 {CSS2: auto}</title>
 
- <!-- compliance patch for microsoft browsers -->
- <!--[if lt IE 8]><script src="../trunk/lib/IE8.js" type="text/javascript">
-  IE7_PNG_SUFFIX = ".png";
- </script><![endif]-->
+ <!-- Compliance patch for Microsoft browsers -->
+ <!--[if lt IE 9]><script src="../trunk/lib/IE9.js">IE7_PNG_SUFFIX=".png"</script><![endif]-->
 
- <style type="text/css">
+ <style>
 
   img {
 
@@ -27,15 +25,15 @@
  </style>
 </head>
 <body>
- <script type="text/javascript" src="ie7-demo.js"></script>
+ <script src="ie7-demo.js"></script>
  <h2>IE7_PNG_SUFFIX = ".png";</h2>
 
  <p>This exampe demostrates how to change the suffix used by the <abbr>PNG</abbr> fix.</p>
 
  <p>
-  <img src="tukan.png" alt="toucan"/>
-  <img src="tukan.png" alt="toucan" width="225" height="225"/>
-  <img src="tukan.png" alt="toucan" width="300" height="300"/>
+  <img src="tukan.png" alt="toucan">
+  <img src="tukan.png" alt="toucan" width="225" height="225">
+  <img src="tukan.png" alt="toucan" width="300" height="300">
  </p>
 
  <p>&lt;&nbsp;<a href="index.html">back</a></p>

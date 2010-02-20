@@ -1,14 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html>
 <head>
  <title>IE7 {CSS2: auto}</title>
 
- <!-- compliance patch for microsoft browsers -->
- <!--[if lt IE 8]>
- <script src="../trunk/lib/IE8.js" type="text/javascript"></script>
- <![endif]-->
+ <!-- Compliance patch for Microsoft browsers -->
+ <!--[if lt IE 9]><script src="../trunk/lib/IE9.js"></script><![endif]-->
 
- <style type="text/css">
+ <style>
 
   input {
 
@@ -26,13 +24,13 @@
 </head>
 
 <body>
- <script type="text/javascript" src="ie7-demo.js"></script>
+ <script src="ie7-demo.js"></script>
  <h2>:disabled</h2>
 
  <form>
-  <p><input type="text" value="Vanilla"/></p>
-  <p><input type="text" value="Strawberry" disabled="disabled"/></p>
-  <p><input type="text" value="Chocolate"/></p>
+  <p><input type="text" value="Vanilla"></p>
+  <p><input type="text" value="Strawberry" disabled></p>
+  <p><input type="text" value="Chocolate"></p>
  </form>
 
  <p>&lt;&nbsp;<a href="index.html">back</a></p>
